@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'exports.dart';
 
 void main() {
   runApp(const Foodie());
@@ -9,18 +9,13 @@ class Foodie extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Home(),
+    return  ChangeNotifierProvider(
+      create: (context) => DataClass(),
+      child: const MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: Home(),
+      ),
     );
   }
 }
 
-class Home extends StatelessWidget {
-  const Home({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return const Scaffold();
-  }
-}
