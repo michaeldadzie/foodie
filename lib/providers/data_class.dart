@@ -6,7 +6,7 @@ class DataClass extends ChangeNotifier {
 
   getData() async {
     loading = true;
-    food = (await getFoodieData());
+    food = await getFoodieData();
     loading = false;
     notifyListeners();
   }

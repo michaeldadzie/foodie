@@ -1,7 +1,13 @@
 import 'exports.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const Foodie());
+  // SystemChrome.setSystemUIOverlayStyle(
+  //   const SystemUiOverlayStyle(
+  //     statusBarColor: Colors.transparent, // status bar color
+  //   ),
+  // );
 }
 
 class Foodie extends StatelessWidget {
