@@ -1,4 +1,4 @@
-package com.seoto.foodie.foodie
+package com.seoto.foodie
 
 import io.flutter.embedding.android.FlutterActivity
 
